@@ -1,0 +1,26 @@
+<h2>Your search results for "{{q}}"":</h2>
+
+<div>
+    <table>
+        <th>
+            <tr>
+                <td><h3>Name</h3></td>
+                <td><h3>Category</h3></td>
+                <td><h3>Rating</h3></td>
+                <td><h3>Installs</h3></td>
+            </tr>
+        </th>
+        <tbody>
+            {{#each recs}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.category}}</td>
+                <td>{{this.rating}}</td>
+                <td>{{this.installs}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+{{!-- Add Previous and Next buttons at the bottom to move the page. Involves limit and offset --}}
